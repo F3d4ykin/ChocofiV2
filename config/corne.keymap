@@ -40,7 +40,7 @@
             bindings = <
 &kp F1  &kp TAB       &kp LA(TAB)  &trans     &kp LC(F)  &kp LS(LC(ESCAPE))    &kp C_MUTE         &bt BT_NXT    &bt BT_CLR      &out OUT_BLE     &out OUT_USB  &kp F1
 &kp F2  &kp LC(Z)     &kp LC(X)    &kp LC(C)  &kp LC(V)  &kp LC(Y)             &kp K_VOLUME_UP    &kp LEFT      &kp UP_ARROW    &kp RIGHT_ARROW  &kp ENTER     &kp F2
-&kp F3  &kp CAPSLOCK  &kp LC(A)    &trans     &trans     &kp DELETE            &kp K_VOLUME_DOWN  &kp HOME      &kp DOWN_ARROW  &kp END          &trans        &kp F3
+&kp F3  &kp CAPSLOCK  &kp LC(A)    &trans     &trans     &kp DELETE            &kp K_VOLUME_DOWN  &kp HOME      &kp DOWN_ARROW  &kp END          &kp LEFT_GUI  &kp F3
                                    &none      &trans     &to 0                 &to 2              &kp LEFT_ALT  &to 3
             >;
         };
