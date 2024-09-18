@@ -9,7 +9,10 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 
-&mt { flavor = "tap-preferred"; };
+&mt {
+    flavor = "tap-preferred";
+    tapping-term-ms = <185>;
+};
 
 / {
     combos { compatible = "zmk,combos"; };
@@ -25,10 +28,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp F1  &kp V  &kp G  &kp M             &kp F  &kp DOUBLE_QUOTES    &kp SQT  &kp K      &kp U             &kp J      &kp Q       &kp F1
-&kp F2  &kp R  &kp S  &mt LEFT_SHIFT T  &kp H  &kp P                &kp Y    &kp I      &mt LEFT_SHIFT E  &kp O      &kp A       &kp F2
-&kp F3  &kp X  &kp C  &kp L             &kp D  &kp B                &kp Z    &kp W      &kp SLASH         &kp COMMA  &kp PERIOD  &kp F3
-                      &mo 1             &kp N  &kp BACKSPACE        &to 2    &kp SPACE  &kp LCTRL
+&kp F1  &kp V           &kp G           &kp M             &kp F        &kp DOUBLE_QUOTES              &kp SQT  &kp K        &kp U             &kp J           &kp Q           &kp F1
+&kp F2  &mt LEFT_GUI R  &mt LEFT_ALT S  &mt LEFT_SHIFT T  &mt LCTRL H  &kp P                          &kp Y    &mt LCTRL I  &mt LEFT_SHIFT E  &mt LEFT_ALT O  &mt LEFT_GUI A  &kp F2
+&kp F3  &kp X           &kp C           &kp L             &kp D        &kp B                          &kp Z    &kp W        &kp SLASH         &kp COMMA       &kp PERIOD      &kp F3
+                                        &mo 1             &kp N        &mt BACKSPACE LC(BACKSPACE)    &to 2    &kp SPACE    &kp LCTRL
             >;
         };
 
@@ -40,10 +43,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp F1  &kp TAB       &kp LA(TAB)  &trans     &kp LC(F)  &kp LS(LC(ESCAPE))    &kp C_MUTE         &bt BT_NXT    &bt BT_CLR      &out OUT_BLE     &out OUT_USB  &kp F1
-&kp F2  &kp LC(Z)     &kp LC(X)    &kp LC(C)  &kp LC(V)  &kp LC(Y)             &kp K_VOLUME_UP    &kp LEFT      &kp UP_ARROW    &kp RIGHT_ARROW  &kp ENTER     &kp F2
-&kp F3  &kp CAPSLOCK  &kp LC(A)    &trans     &trans     &kp DELETE            &kp K_VOLUME_DOWN  &kp HOME      &kp DOWN_ARROW  &kp END          &kp LEFT_GUI  &kp F3
-                                   &none      &trans     &to 0                 &to 2              &kp LEFT_ALT  &to 3
+&kp F1  &kp TAB       &trans     &trans     &kp LC(F)  &kp LS(LC(ESCAPE))    &kp C_MUTE         &bt BT_NXT    &bt BT_CLR      &out OUT_BLE     &out OUT_USB  &kp F1
+&kp F2  &kp LC(Z)     &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(Y)             &kp K_VOLUME_UP    &kp LEFT      &kp UP_ARROW    &kp RIGHT_ARROW  &kp ENTER     &kp F2
+&kp F3  &kp CAPSLOCK  &kp LC(A)  &trans     &trans     &kp DELETE            &kp K_VOLUME_DOWN  &kp HOME      &kp DOWN_ARROW  &kp END          &trans        &kp F3
+                                 &none      &trans     &to 0                 &to 2              &kp LEFT_ALT  &to 3
             >;
         };
 
