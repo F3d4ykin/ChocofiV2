@@ -28,10 +28,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp F1  &kp V           &kp G           &kp M             &kp F        &kp DOUBLE_QUOTES              &kp SQT  &kp K        &kp U             &kp J           &kp Q           &kp F1
-&kp F2  &mt LEFT_GUI R  &mt LEFT_ALT S  &mt LEFT_SHIFT T  &mt LCTRL H  &kp P                          &kp Y    &mt LCTRL I  &mt LEFT_SHIFT E  &mt LEFT_ALT O  &mt LEFT_GUI A  &kp F2
-&kp F3  &kp X           &kp C           &kp L             &kp D        &kp B                          &kp Z    &kp W        &kp SLASH         &kp COMMA       &kp PERIOD      &kp F3
-                                        &mo 1             &kp N        &mt LC(BACKSPACE) BACKSPACE    &sl 2    &kp SPACE    &kp LCTRL
+&kp F1  &kp Q           &kp B           &kp H             &kp G        &kp DOUBLE_QUOTES              &kp SQT    &kp PERIOD   &kp SLASH         &kp J           &kp X           &kp F1
+&kp F2  &mt LEFT_GUI C  &mt LEFT_ALT S  &mt LEFT_SHIFT N  &mt LCTRL T  &kp K                          &kp COMMA  &mt LCTRL A  &mt LEFT_SHIFT E  &mt LEFT_ALT I  &mt LEFT_GUI M  &kp F2
+&kp F3  &kp P           &kp F           &kp L             &kp D        &kp V                          &kp Z      &kp U        &kp O             &kp Y           &kp W           &kp F3
+                                        &mo 1             &kp R        &mt LC(BACKSPACE) BACKSPACE    &sl 2      &kp SPACE    &kp LCTRL
             >;
         };
 
