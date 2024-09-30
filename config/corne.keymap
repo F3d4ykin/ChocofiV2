@@ -43,10 +43,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp F1  &kp TAB       &trans     &kp LA(F4)  &kp LC(F)  &kp LS(LC(ESCAPE))    &kp C_MUTE         &bt BT_NXT  &bt BT_CLR      &out OUT_BLE     &out OUT_USB  &kp F1
-&kp F2  &kp LC(Z)     &kp LC(X)  &kp LC(C)   &kp LC(V)  &kp LC(Y)             &kp K_VOLUME_UP    &kp LEFT    &kp UP_ARROW    &kp RIGHT_ARROW  &kp ENTER     &kp F2
-&kp F3  &kp CAPSLOCK  &kp LC(A)  &trans      &trans     &kp DELETE            &kp K_VOLUME_DOWN  &kp HOME    &kp DOWN_ARROW  &kp END          &trans        &kp F3
-                                 &none       &trans     &to 0                 &to 2              &trans      &to 3
+&kp F1  &kp TAB       &trans     &kp LA(F4)  &kp LC(F)  &kp LS(LC(ESCAPE))    &kp C_MUTE         &trans    &trans          &trans           &out OUT_USB  &kp F1
+&kp F2  &kp LC(Z)     &kp LC(X)  &kp LC(C)   &kp LC(V)  &kp LC(Y)             &kp K_VOLUME_UP    &kp LEFT  &kp UP_ARROW    &kp RIGHT_ARROW  &kp ENTER     &kp F2
+&kp F3  &kp CAPSLOCK  &kp LC(A)  &trans      &trans     &kp DELETE            &kp K_VOLUME_DOWN  &kp HOME  &kp DOWN_ARROW  &kp END          &trans        &kp F3
+                                 &none       &mo 5      &to 0                 &to 2              &trans    &to 3
             >;
         };
 
@@ -67,10 +67,10 @@
 
         Gaming3 {
             bindings = <
-&kp F1  &kp TAB    &kp Q  &kp W  &kp E     &kp R        &kp Y  &kp U   &kp I   &kp O   &kp ESC    &kp F1
-&kp F2  &kp LCTRL  &kp A  &kp S  &kp D     &kp F        &kp P  &kp N1  &kp N2  &kp N3  &kp ENTER  &kp F2
-&kp F3  &kp LSHFT  &kp Z  &kp X  &kp C     &kp V        &kp N  &kp N4  &kp N5  &kp N6  &kp F10    &kp F3
-                          &mo 4  &kp LALT  &kp SPACE    &to 0  &mo 1   &kp M
+&kp F1  &kp TAB    &kp Q  &kp W         &kp E  &kp R        &kp Y  &kp U   &kp I   &kp O   &kp ESC    &kp F1
+&kp F2  &kp LCTRL  &kp A  &kp S         &kp D  &kp F        &kp P  &kp N1  &kp N2  &kp N3  &kp ENTER  &kp F2
+&kp F3  &kp LSHFT  &kp Z  &kp X         &kp C  &kp V        &kp N  &kp N4  &kp N5  &kp N6  &kp F10    &kp F3
+                          &kp LEFT_ALT  &mo 4  &kp SPACE    &to 0  &mo 1   &kp M
             >;
         };
 
@@ -80,6 +80,15 @@
 &trans  &trans  &kp N4  &kp N5  &kp N6  &kp P     &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &kp B     &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        BluetoothControl5 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &bt BT_SEL 0  &bt BT_SEL 0  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &bt BT_CLR    &trans        &trans        &trans        &out OUT_BLE  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans        &trans        &trans        &trans        &out OUT_USB  &trans
+                        &trans  &trans  &trans    &trans        &trans        &trans
             >;
         };
     };
